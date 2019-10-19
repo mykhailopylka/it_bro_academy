@@ -1,0 +1,101 @@
+<!DOCTYPE html>
+<html lang="uk">
+<head>	
+	<title>Євробляха для атовця</title>
+	<meta http-equiv="Content-type" content="text/html;charset=UTF-8"/>
+	<link rel="icon" href="img/favicon.png" type="image/x-icon">
+</head>
+<body>
+<main class="my-container">
+	<section>
+		<form name="euro_car" action="" method="POST">
+			<fieldset>
+				<legend>
+					Євробляхи для атовця
+				</legend>
+				<article>
+					<select>
+					<optgroup label="Тип автомобіля">
+						<option>Виберіть тип автомобіля</option>
+						<option value="c1">Седан</option>
+						<option value="c2">Хетчбек</option>
+						<option value="c3">Позашляховик</option>
+						<option value="c3">Мінівен</option>
+						<option value="c3">Мікроавтобус</option>
+					</optgroup>
+					</select>
+					&nbsp;
+					<select>
+					<optgroup label="Марка">
+						<option>Виберіть марку автомобіля</option>
+						<option value="s1">Volvo</option>
+						<option value="s2">Saab</option>
+						<option value="s3">Mercedes</option>
+						<option value="s3">Audi</option>
+						<option value="s3">Opel</option>
+						<option value="s3">VolksWagen</option>
+					</optgroup>
+				   </select>
+				   &nbsp;
+					<select>						
+					<optgroup label="Країна">
+						<option>Виберіть країну</option>
+						<option value="s1">Польща</option>
+						<option value="s2">Литва</option>
+						<option value="s3">Латвія</option>
+						<option value="s3">Естонія</option>
+						<option value="s3">Словаччина</option>
+						<option value="s3">Угорщина</option>
+						<option value="s3">Чехія</option>
+					</optgroup>
+				   </select>
+				   <br>
+				   <hr>
+				   <p>
+				   		Ваше ім'я: <input type="text" name="pib" id="pib" placeholder="Ваше ім'я" required>
+				   	</p>
+				   <p>
+				   		Введіть ваш номер телефону в форматі <mark>+38(098)4567890</mark>:
+				   	</p>
+    				<input  type="tel" name="tel" pattern="^\+38\d{3}\d{7}$" value="+38" maxlength="13">
+    				<br>
+    				<p>
+    					Введіть ваш номер УБД в форматі <mark>серія АБ 123456 </mark>:
+    				</p>
+    				<input type="text" name="UBD" pattern="\серія\[А-Яа-яЁё]{2}\d{6}$" value="серія " maxlength="15">
+    				<hr>
+    				<br>
+		            	Чи завозили раніше євробляхи?
+						<br>
+		            	<input type="radio" name="term" value="ні" id='term_1'>
+		            	<label for="term_1">так</label>
+		            	<br>
+		            	<input type="radio" name="term" value="так" id='term_2'>
+		            	<label for="term_2">ні</label>
+		            	<br>
+    				<hr>			   
+					<button type="submit" value="send">
+						Відправити анкету
+					</button>
+					<button type="reset" value="reset">
+						Скинути дані
+					</button>
+				</article>
+			</fieldset>
+		</form>
+		<p>
+			<a href="index.html">Повернутись в головне меню</a>
+		</p>
+	</section>				
+</main>
+<footer class="my-footer">
+	<section align='center' id='footer'>
+		<p class="my-copy">
+			Мої права - мої правила &#169;
+		<br>
+			<a href="https://www.facebook.com/profile.php?id=100008885566879">Розробив Пилка Михайло</a>
+		</p>
+	</section>
+</footer>
+</body>
+</html>
