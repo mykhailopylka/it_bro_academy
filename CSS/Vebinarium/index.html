@@ -7,13 +7,25 @@
 	<link rel="icon" href="img/favicon.png" type="image">
 	<link rel="stylesheet" href="css/style.css">
 	<title>Вебінаріум</title>
-	<base target="_blank">
-	<!--[if lt IE 9]>
+	<!--<base target="_blank">
+	[if lt IE 9]>
 	<script src="//html5shiv.google.com/svn/trunk/html5.js"></script>
 	<![endif]-->
 </head>
 <body>		
-<header role='header'>
+<header role="upside">
+	<section>
+		<div class="upside-logo">
+			<a href="https://www.facebook.com/profile.php?id=100008885566879"><img src="img/black.png" alt="logo"></a>
+			<div class="upside-menu">
+				<a href="#">Головна</a>
+				<a href="#footer-contact">Контакти</a>
+				<a href="#">Про проект</a>
+				<a href="#">Links</a>
+				<a href="#respond_service">Відгуки</a>
+			</div>
+		</div>
+	</section>
 	<h1>
 		ВЕБІНАРІУМ
 	</h1>
@@ -132,7 +144,7 @@
 					</li>
 					<li>
 						<a href="21_propertys/index.html">
-							21 CSS властивість:
+							63 властивостей CSS:
 						</a>
 					</li>
 				</ul>
@@ -147,34 +159,30 @@
 		<!-- Форма для відгуків -->
 	<section class="respond">				
 		<form name="author" action="" method="POST">
-			<fieldset class="respond_field">
-			<p>
-			<legend>
-				<div class="respond_title">
-					Відгуки та пропозиції
+			<fieldset id="respond_service">
+				<legend>
+					<div class="respond_title">
+						Відгуки та пропозиції
+					</div>
+				</legend>
+				<div class="text_form">
+					<textarea title="Відгуки та пропозиції" name="message">					
+					</textarea>
 				</div>
-			</legend>
-			<div class="text_form">
-			<textarea title="Відгуки та пропозиції" maxlength="100" name="message">					
-			</textarea>
-			</div>
-			<br>
-			<div class="button_submit">
-				<button type="submit" value="send">
-					Відправити відгук
-				</button>
-				<button type="reset" value="reset">
-					Очистити
-				</button>
-			</div>
-			</p>
+				<br>
+				<div class="button_submit">
+					<button type="submit" value="send">
+						Відправити
+					</button>
+					<button type="reset" value="reset">
+						Очистити
+					</button>
+				</div>
 			</fieldset>
 	</section>	
 </main>
 <footer role='footer'>
-	<div class="my-copy">
-		<a href="https://www.facebook.com/profile.php?id=100008885566879">Розробив Пилка Михайло</a>
-	</div>
+	<a href="https://www.facebook.com/profile.php?id=100008885566879">Розробив Пилка Михайло 2019</a>
 </footer>
 </body>
 </html>
