@@ -1,0 +1,223 @@
+*, *:befor. *:after {
+ 	-webkit-box-sizing: border-box;
+ 	-moz-box-sizing: border-box;
+ 	box-sizing: border-box;
+ }
+body {
+	margin: 0;
+ 	padding: 0;
+ 	background-image: url(../img/sky.png);
+}
+h1 {
+	font-size: 40px;
+	max-height: 51px;
+	max-width: 705px;
+	margin: 100px auto 0;
+	margin-left: 450px;
+	color: #570B21;	
+}
+h2 {
+	font-size: 30px;
+	max-height: auto;
+	max-width: 526px;
+	margin: 50px auto 30px auto;
+	color: #570B21;
+	text-align: center;
+	font-style: italic;
+}
+h3 {
+	font-size: 30px;
+	color: #570B21;
+	font-style: italic;
+}
+a {
+	text-decoration: none;
+}
+ /*=======================*/
+/* header */
+.upside-logo {
+	position : relative;
+	width : 100%; /* for IE 6 */
+	background-color: #570B21;	
+}
+.upside-menu {
+	position : absolute;
+	text-align: right;
+	top	: 120px;
+	right : 100px;
+	width : 100%;
+}
+.upside-menu a{
+	margin-right: 40px;
+	font-size: 20px;
+	text-decoration: none;
+	color: #ffffff;	
+}
+.upside-menu a:hover{	
+	color: #07F7FE;	
+}
+
+/*======================*/
+/* MENU */
+.sq-main-navigation {
+	display: block;
+}
+ul{
+	list-style-type: none;
+}
+.sq-nav-list a {
+	display: block;
+	box-shadow: 5px 5px 5px #570B21;
+	border-radius: 10px;
+	font-size: 2em;
+	margin-bottom: 10px;
+	width: 300px;
+	color: #34367E;
+}
+.sq-nav a {
+	display: block;
+	width: 300px;
+	padding: 0 5px;	
+	text-align: center;
+	position: relative;
+	text-decoration: none;
+}
+.sq-nav a::after {
+	height: 100%;
+	content: "";
+	background: rgba(0,0,0,0.5);
+	position: absolute;
+	top: 0;
+	left: 1px;
+	right: 1px;
+	opacity: 0;
+	border-radius: 10px;
+}
+.sq-nav a:hover::after, .sq-nav-list a:hover::before {
+	opacity: 1;
+	cursor: pointer;
+}
+/*end of navigation*/
+/*======================*/
+.sq-main-logo{
+	display: flex;
+	width: 100%;
+}
+.sq-main-logo img {
+	margin: 20px 50px 10px 120px;
+}
+.sq-main-logo #sq-main-logo-crist {
+	width: 150px;
+	height: 150px;
+}
+/*==========================================================*/
+/* display: none;       робить елемент невидимим (не бажано використовувати, google банить)*/
+/*
+position: absolute;
+position: relative;
+position: static;
+position: fixed;
+position: sticky;
+*/
+/*==========================================================*/
+/*Основні статті*/
+/*==========================================================*/
+.sq-unity{
+	display: flex;
+}
+.sq-main-legend {
+	max-width: 80%;
+}
+.sq-unity p{
+	margin: 20px 50px 20px 100px;
+	font-size: 1.5em;
+	text-align: justify;
+}
+/*==========================================================*/
+/*Форма для запитів*/
+/*==========================================================*/
+.aplication {
+	width: 80%;
+	background-image: url(../img/komok.png);
+	margin: 20px auto 50px auto;
+	box-shadow: 10px 10px 10px 10px #000;
+	text-align: left;
+	overflow: auto;
+	max-height: 600px;
+}
+.aplication p {
+	font-size: 1.0em;
+	font-weight: bolder;
+	color: #570B21;
+}
+#pib {
+	display: flex;
+	width: 352px;
+	height: 30px;
+	margin: -40px 0 0 90px;
+}
+#date {
+	display: flex;
+	width: 140px;
+	height: 30px;
+	margin: -40px 0 10px 300px;
+}
+label {
+	font-size: 1.5em;
+	font-weight: bolder;
+	color: #570B21;
+}
+fieldset{
+ border: none;  /* видаляэмо рамки  */
+}
+input{
+border: solid 1px #f2f2f2;  /* виділяю radibutton and checkbox рамочкою, самі елементи вибору  */
+}
+.aplication-button{
+	display: flex;	
+	width: 490px;
+	height: 80px;
+	text-align: center;
+}
+button {
+	border-radius: 20px;
+	background: #570B21;
+	box-shadow: 5px 5px 5px #000000;
+	font-size: 20px;
+	color: #ffffff;
+}
+button[type="submit"]{
+	margin: 0 20px 40px 140px;
+}
+button[type="reset"]{
+	margin-bottom: 40px;
+}
+button:hover {
+	box-shadow: 10px 10px 10px #FF0800;
+	color: #07F7FE;
+}
+
+/*==========================================================*/
+/*підвад*/
+/*==========================================================*/
+#basment {
+	display: flex;
+	position: absolute; /* фіксуємо положення */
+	left: 0; bottom: 800; /* визначаємо лівий нижній кут */
+	padding: 0px; /* поля навколо тексту */
+	background: #570B21; /* колір фону */    
+	width: 100%; /* ширина слоя */
+	height: 120px; /* висота слоя */
+
+}
+#basment a {
+	color: #fff	;
+	text-align: left;
+	padding: 2px;
+}
+#basment img {
+	width: 110px;
+	height: 115px;
+	margin-left: 100px;
+	text-align: center;
+}
