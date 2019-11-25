@@ -220,7 +220,7 @@ legend{
 }
 .bundl {
 	position: absolute;
-	top: 212px;	
+	top: 300px;	
  	left: 39px;
  	width: 30px;
  	height: 30px; 
@@ -228,8 +228,8 @@ legend{
 }
 .squad {
 	position: absolute;
-	top: 394px;
- 	left: 39px;
+	top: 433px;
+ 	left: 46px;
 	width: 30px;
 	height: 30px;
 	border: 1px solid #D40000;
@@ -297,7 +297,7 @@ legend{
 	position: absolute;
 	width: 30px;
  	height: 47px; 	
- 	top: 305px;
+ 	top: 360px;
  	left: 40px;
  	border: 5px solid #000;
 }
@@ -340,7 +340,6 @@ legend{
  	right: 40px;
  	top: 300px;
  	text-align: left;
- 	border: 1.5px solid #000;
  	background-color: #66DDAA;
  	-webkit-box-shadow: 3px 3px 5px 6px #666;
 	-moz-box-shadow:    3px 3px 5px 6px #666;
@@ -348,14 +347,14 @@ legend{
  }
  .conteiner-description ul, li {
  	list-style-type: none;
- 	font-size: 1.5em;
+ 	font-size: 1.0em;
  }
  .conteiner-description img {
  	width: 50px;
  	height: 50px;
  }
 .conteiner-description-tab2 li{
-	margin-bottom: 20px;
+	margin: 10px auto 40px;
 }
  /* =========== basment ==========*/
 .basment {
