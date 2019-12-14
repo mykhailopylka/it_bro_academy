@@ -1,0 +1,778 @@
+*, *:befor. *:after {
+-webkit-box-sizing: border-box;
+-moz-box-sizing: border-box;
+box-sizing: border-box;
+}
+html, body {
+    line-height: 1.0;
+}
+body {
+    display: flex;
+    flex-direction: column;
+    background: #000;
+    color: #222222;
+    font-family: droid_serifregular; /* задаємо згенерований нами шрифт, та підключений в html */
+    font-weight: normal;
+    font-style: normal;
+    color: #fff;
+}
+main {
+    flex-grow: 1;    
+}
+main, header, footer {
+    box-sizing: border-box;
+    padding: 20px;
+    width: 100%;
+}
+header, footer {
+    background: #000;
+}
+header {
+    display: flex;
+    /* Градієнтна заливка голови */
+    background: -webkit-linear-gradient(bottom left, #0048BA, #FFF600);
+    background: -o-linear-gradient(bottom left, #0048BA, #FFF600);
+    background: linear-gradient(to top right, #0048BA, #FFF600);
+}
+.upside-logo {
+    width: 50px;
+    height: 50px;
+}
+header span {
+    font-family: wolfgang_amadeus_mozartRg;
+    font-size: 3.5em;
+    color: #D40000;
+    -webkit-text-stroke-width: .5px;  /* обведення літер кольором та регулювання товщини обводки */
+    -webkit-text-stroke-color: #000;
+    margin: 0 auto;
+}
+.main_conteiner {
+    display:inline-block;
+    margin-bottom: 20px;
+}
+/*============ картинка підложка  ==============*/
+.scheme {
+    display:inline-block;
+    position: relative;
+    width: 1380px;
+    height: 975px;
+    background-image: url(../img/fonts_scheme.png);
+    margin-left: 243px;
+    box-shadow: 5px 5px 20px  #D40000;
+}
+/*============ центральний блок-заголовок  ==============*/
+.main_conteiner-head {    
+    display:inline-block;
+    position: absolute;
+    top: 311px;
+    left: 410px;
+    text-align: center;
+    width: 478px;
+    height: 209px;
+    border: 3px solid #fff;
+}
+h2, p {
+    margin: 0;
+    padding: 0;
+}
+.main_conteiner-head h2 {
+    font-family: antique_olivebold, Helvetica;
+    padding-top: 25px;
+    padding-bottom: 10px;
+    line-height: 1.5;
+    font-size: 2.5em;
+    font-weight: 800;
+    text-transform: uppercase;
+}
+.main_conteiner-head p {
+    font-size: 1.5em;
+    font-weight: 500;    
+}
+/*============ кінець центральний блок-заголовок  ==============*/
+/*============ лівий кут, опис проекту  ==============*/
+.main_conteiner-discribe {
+    display:inline-block;
+    position: absolute;
+    font-family: Helvetica;
+    top: 25px;
+    left: 16px;
+    text-align: left;
+    width: 300px;
+    height: 100px;
+}
+.main_conteiner-discribe p{
+    font-size: .7em;
+}
+.main_conteiner-discribe span{
+    font-size: 1.3em;
+    color: #FFDB00;
+}
+/*============ кінець лівий кут, опис проекту  ==============*/
+/*============ шрифти  ==============*/
+.main_conteiner-fonts {
+    display:inline-block;
+    font-size: .8em;
+    line-height: 1.4;
+    font-family: colibri;
+}
+.main_conteiner-fonts-bold {
+    display:inline-block;
+    position: absolute;
+    top: 132px;
+    left: 12px;
+    text-align: center;
+    width: 87px;
+    height: 36px;
+   /* border: 3px solid #fff;  */
+}
+.main_conteiner-fonts-bold span {
+    display: block;
+    padding: 12px;
+}
+.main_conteiner-fonts-thin {
+    display:inline-block;   
+    position: absolute;
+    top: 110px;
+    left: 195px;
+    text-align: center;
+    width: 90px;
+    height: 36px;
+   /* border: 2px solid #2C2C2C;  */
+}
+.main_conteiner-fonts-thin span {
+    display: block;
+    padding: 12px;
+}
+.main_conteiner-fonts-rounde {
+    display:inline-block;
+    position: absolute;
+    top: 139px;
+    left: 116px;
+    text-align: center;
+    width: 30px;
+    height: 30px;
+    border: 1px solid #fff;
+    border-radius: 100%;
+}
+.main_conteiner-fonts-rounde span {
+    display: block;
+    padding-top: 8px;
+}
+/*============ шрифти похідні ==============*/
+.ind-00 {
+    font-family: baskvl;
+}
+.ind-0 {
+    line-height: .9;
+}
+.ind-1 {
+    top: 139px;
+    left: 150px;
+}
+.ind-2 {
+    top: 103px;
+    left: 298px;
+    font-family: Syntax;
+}
+.ind-3 {
+    top: 175px;
+    left: 77px;
+    line-height: .9;
+    font-size: .8em;
+}
+.ind-4 {
+    top: 160px;
+    left: 182px;
+    height: 25px;
+}
+.ind-5 { 
+    top: 162px;
+    left: 275px;
+    height: 25px;
+    font-size: .9em; 
+}
+.ind-6 {
+    top: 205px;
+    left: 181px;
+    font-family: FF Scala;
+}
+.ind-7 {
+    top: 239px;
+    left: 12px;
+    font-family: Joanna;
+}
+.ind-8 {
+    top: 254px;
+    left: 162px;
+    font-family: Minior;
+}
+.ind-9 {
+    top: 300px;
+    left: 62px;
+}
+.ind-10 {
+    top: 300px;
+    left: 104px;
+    font-size: .8em;
+}
+.ind-11 {
+    top: 332px;
+    left: 55px;
+    line-height: 1.0;
+    font-size: .8em;    
+}
+.ind-12 {
+    top: 316px;
+    left: 193px;
+}
+.ind-13 {
+    top: 349px;
+    left: 193px;
+}
+.ind-14 {
+    top: 325px;
+    left: 246px;
+    font-size: .8em; 
+}
+.ind-15 {
+    top: 300px;
+    left: 328px;
+}
+.ind-16 {
+    top: 300px;
+    left: 368px;
+}
+.ind-17 {
+    top: 235px;
+    left: 313px;
+    font-size: .7em;
+    padding-top: 8px;
+}
+.ind-18 {
+    top: 233px;
+    left: 430px;
+    width: 72px;
+    height: 46px;
+    padding-top: 8px;
+}
+/*---rounde */
+.ind-19 {
+    top: 62px;
+    left: 468px;
+}
+.ind-20 {
+    top: 63px;
+    left: 508px;
+}
+.ind-21 {
+    top: 113px;
+    left: 580px;
+}
+.ind-22 {
+    top: 113px;
+    left: 620px;
+}
+.ind-23 {
+    top: 159px;
+    left: 694px;
+}
+.ind-24 {
+    top: 159px;
+    left: 735px;
+}
+.ind-25 {
+    top: 129px;
+    left: 826px;
+}
+.ind-26 {
+    top: 87px;
+    left: 981px;
+}
+.ind-27 {
+    top: 87px;
+    left: 1022px;
+}
+.ind-28 {
+    top: 87px;
+    left: 1064px;
+}
+.ind-29 {
+    top: 87px;
+    left: 1104px;
+}
+.ind-30 {
+    top: 122px;
+    left: 1203px;
+}
+.ind-31 {
+    top: 161px;
+    left: 1203px;
+}
+.ind-32 {
+    top: 367px;
+    left: 985px;
+}
+.ind-33 {
+    top: 367px;
+    left: 1027px;
+}
+.ind-34 {
+    top: 333px;
+    left: 1088px;
+}
+.ind-35 {
+    top: 333px;
+    left: 1127px;
+}
+.ind-36 {
+    top: 479px;
+    left: 940px;
+}
+.ind-37 {
+    top: 479px;
+    left: 980px;
+}
+.ind-38 {
+    top: 468px;
+    left: 1040px;
+}
+.ind-39 {
+    top: 468px;
+    left: 1080px;
+}
+.ind-40 {
+    top: 332px;
+    left: 1217px;
+}
+.ind-41 {
+    top: 372px;
+    left: 1219px;
+}
+.ind-42 {
+    top: 482px;
+    left: 1263px;
+}
+.ind-43 {
+    top: 570px;
+    left: 1018px;
+}
+.ind-44 {
+    top: 587px;
+    left: 899px;
+    font-size: .6em;
+}
+.ind-45 {
+    top: 587px;
+    left: 940px;
+    font-size: .5em;
+}
+.ind-46 {
+    top: 617px;
+    left: 1109px;
+}
+.ind-47 {
+    top: 617px;
+    left: 1150px;
+    font-size: .6em;
+}
+.ind-48 {
+    top: 697px;
+    left: 1227px;
+}
+.ind-49 {
+    top: 731px;
+    left: 1227px;
+}
+.ind-50 {
+    top: 644px;
+    left: 852px;
+}
+.ind-51 {
+    top: 684px;
+    left: 852px;
+}
+.ind-52 {
+    top: 776px;
+    left: 787px;
+}
+.ind-53 {
+    top: 777px;
+    left: 828px;
+}
+.ind-54 {
+    top: 784px;
+    left: 885px;
+}
+.ind-55 {
+    top: 784px;
+    left: 925px;
+}
+.ind-56 {
+    top: 819px;
+    left: 1036px;
+}
+.ind-57 {
+    top: 854px;
+    left: 1036px;
+}
+.ind-58 {
+    top: 729px;
+    left: 1044px;
+}
+.ind-59 {
+    top: 770px;
+    left: 1078px;
+}
+.ind-60 {
+    top: 810px;
+    left: 1190px;
+}
+.ind-61 {
+    top: 698px;
+    left: 635px;
+}
+.ind-62 {
+    top: 698px;
+    left: 675px;
+}
+.ind-63 {
+    top: 805px;
+    left: 593px;
+}
+.ind-64 {
+    top: 805px;
+    left: 633px;
+}
+.ind-65 {
+    top: 809px;
+    left: 714px;
+}
+.ind-66 {
+    top: 722px;
+    left: 463px;
+}
+.ind-67 {
+    top: 722px;
+    left: 503px;
+}
+.ind-68 {
+    top: 703px;
+    left: 366px;
+}
+.ind-69 {
+    top: 742px;
+    left: 366px;
+}
+.ind-70 {
+    top: 849px;
+    left: 315px;
+}
+.ind-71 {
+    top: 889px;
+    left: 315px;
+}
+.ind-72 {
+    top: 704px;
+    left: 103px;
+}
+.ind-73 {
+    top: 704px;
+    left: 143px;
+}
+.ind-74 {
+    top: 627px;
+    left: 206px;
+}
+.ind-75 {
+    top: 666px;
+    left: 206px;
+}
+.ind-76 {
+    top: 561px;
+    left: 263px;
+}
+.ind-77 {
+    top: 601px;
+    left: 263px;
+}
+.ind-78 {
+    top: 569px;
+    left: 54px;
+}
+.ind-79 {
+    top: 607px;
+    left: 54px;
+}
+.ind-80 {
+    top: 494px;
+    left: 269px;
+}
+.ind-81 {
+    top: 529px;
+    left: 269px;
+}
+.ind-82 {
+    top: 448px;
+    left: 171px;
+}
+.ind-83 {
+    top: 448px;
+    left: 211px;
+}
+.ind-84 {
+    top: 420px;
+    left: 63px;
+}
+.ind-85 {
+    top: 420px;
+    left: 104px;
+}
+.ind-86 {
+    top: 520px;
+    left: 14px;
+}
+/* ====== end rounde ============= */
+.ind-87 {
+    top: 178px;
+    left: 443px;
+}
+.ind-88 {
+    top: 106px;
+    left: 455px;
+    font-size: .5em;
+}
+.ind-89 {
+    top: 51px;
+    left: 571px;
+    font-size: .6em;
+}
+.ind-90 {
+    top: 105px;
+    left: 690px;
+    font-size: .5em;
+}
+.ind-91 {
+    top: 174px;
+    left: 790px;
+    font-size: .5em;
+}
+.ind-92 {
+    top: 136px;
+    left: 974px;
+    font-size: .5em;
+}
+.ind-93 {
+    top: 30px;
+    left: 1034px;
+    font-size: .5em;
+}
+.ind-94 {
+    top: 130px;
+    left: 1107px;
+    font-size: .6em;
+}
+.ind-95 {
+    top: 187px;
+    left: 970px;
+}
+.ind-96 {
+    top: 251px;
+    left: 971px;
+}
+.ind-97 {
+    top: 221px;
+    left: 1078px;
+}
+.ind-98 {
+    top: 309px;
+    left: 977px;
+    font-size: .6em;
+}
+.ind-99 {
+    top: 265px;
+    left: 1084px;
+    font-size: .6em;
+}
+.ind-100 {
+    top: 364px;
+    left: 1119px;
+    font-size: .6em;
+}
+.ind-101 {
+    top: 412px;
+    left: 933px;
+    font-size: .6em;
+}
+.ind-102 {
+    top: 411px;
+    left: 1032px;
+    font-size: .7em;
+}
+.ind-103 {
+    top: 406px;
+    left: 1237px;
+}
+.ind-104 {
+    top: 435px;
+    left: 1246px;
+    font-size: .6em;
+}
+.ind-105 {
+    top: 532px;
+    left: 892px;
+    font-size: .5em;
+}
+.ind-106 {
+    top: 519px;
+    left: 990px;
+    font-size: .5em;
+}
+.ind-107 {
+    top: 558px;
+    left: 1101px;
+    font-size: .5em;
+}
+.ind-108 {
+    top: 596px;
+    left: 741px;
+    font-size: .5em;
+}
+.ind-109 {
+    top: 599px;
+    left: 649px;
+    font-size: .6em;
+}
+.ind-110 {
+    top: 640px;
+    left: 628px;
+    font-size: .8em;
+}
+.ind-111 {
+    top: 644px;
+    left: 744px;
+    font-size: .6em;
+}
+.ind-112 {
+    top: 742px;
+    left: 577px;
+    font-size: .7em;
+}
+.ind-113 {
+    top: 738px;
+    left: 685px;
+    font-size: .6em;
+}
+.ind-114 {
+    top: 719px;
+    left: 782px;
+    font-size: .5em;
+}
+.ind-115 {
+    top: 741px;
+    left: 875px;
+    font-size: .57em;
+}
+.ind-116 {
+    top: 761px;
+    left: 980px;
+    font-size: .65em;
+}
+.ind-117 {
+    top: 820px;
+    left: 939px;
+    font-size: .7em;
+}
+.ind-118 {
+    top: 705px;
+    left: 1120px;
+    font-size: .6em;
+}
+.ind-119 {
+    top: 753px;
+    left: 1122px;
+    font-size: .6em;
+}
+.ind-120 {
+    top: 851px;
+    left: 708px;
+    font-size: .8em;
+}
+.ind-121 {
+    top: 848px;
+    left: 609px;
+    font-size: .7em;
+}
+.ind-122 {
+    top: 848px;
+    left: 496px;
+    font-size: .8em;
+}
+.ind-123 {
+    top: 881px;
+    left: 496px;
+    font-size: .6em;
+}
+.ind-124 {
+    top: 881px;
+    left: 377px;
+    font-size: .8em;
+}
+.ind-125 {
+    top: 596px;
+    left: 440px;
+    font-size: 1.0em;
+}
+.ind-126 {
+    top: 655px;
+    left: 452px;
+    font-size: 0.6em;
+}
+.ind-127 {
+    top: 780px;
+    left: 436px;
+    font-size: 0.6em;
+}
+.ind-128 {
+    top: 392px;
+    left: 164px;
+    font-size: 0.6em;
+}
+.ind-129 {
+    top: 452px;
+    left: 56px;
+    font-size: 0.6em;
+}
+.ind-130 {
+    top: 512px;
+    left: 56px;
+    font-size: 0.6em;
+}
+.ind-131 {
+    top: 504px;
+    left: 163px;
+    font-size: 0.6em;
+}
+.ind-132 {
+    top: 574px;
+    left: 93px;
+    font-size: 0.7em;
+}
+.ind-133 {
+    top: 661px;
+    left: 95px;
+    font-size: 0.6em;
+}
+.ind-134 {
+    top: 636px;
+    left: 258px;
+    font-size: 0.6em;
+}
+.ind-135 {
+    top: 572px;
+    left: 309px;
+    font-size: 0.5em;
+}
+<div class="main_conteiner-fonts-thin ind-107">
+                        <span>БОЇШСЯ ПИТАННЯ, ТИ ЖИВЕШ В 90-ТИХ?</span>
+                    </div>
+/*============ кінець шрифти ==============*/
