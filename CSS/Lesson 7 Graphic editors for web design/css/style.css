@@ -4,8 +4,8 @@
 box-sizing: border-box;
 }
 html, body {
-	height: 4715px;
-	width: 1980px;
+	width: 100%;
+	max-width: 1980px;
 }
 body {
     display: flex;
