@@ -4,31 +4,8 @@
 box-sizing: border-box;
 }
 html, body {
-    max-width: 100%;
-}
-/*
-body {
-    display: flex;
-    flex-direction: column;
-    background: #ffffff;
-    color: #222222;
-    font-family: Arial, Helvetica, sans-serif;
-}
-main {
-    flex-grow: 1;
-}
-main, header, footer {
-    box-sizing: border-box;
-    padding: 20px;
     width: 100%;
-    font-family: Helvetica;
 }
-header, footer {
-    background: #fff;
-    color: #000;
-}
-*/
-
 /*************************************************************/
 /* HEADER                                                    */
 /*************************************************************/
@@ -396,19 +373,6 @@ header {
 }
 /*************************************************************/
 /* FOOTER                                                    */
-/************************************************************
-
-.basement {
-    position: fixed;
-    left: 0;
-    bottom: 0;
-    text-align: left;
-    padding: 20px 0;
-    width: 100%;
-    height: 50px;
-}*/
-/*************************************************************
-/* END FOOTER                                                    */
 /*************************************************************/
 footer {
   position: absolute;
@@ -417,3 +381,6 @@ footer {
   height: 50px;
   padding-left: 50px;
 }
+/*************************************************************/
+/* END FOOTER                                               */
+/*************************************************************/
