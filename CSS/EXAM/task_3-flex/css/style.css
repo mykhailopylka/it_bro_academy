@@ -206,10 +206,10 @@ header {
     border-radius: 40px;
     font-size: 16px;
     color: #2E2E2E;
-    width: 32px;
+    width: 35px;
     height: 25px;
     margin-right: 5px;
-    padding-top: 7px;
+    padding-top: 10px;
 }
 .top_layer:hover .about__layer{
     opacity: 1;
