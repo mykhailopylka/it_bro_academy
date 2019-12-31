@@ -199,7 +199,7 @@ header {
     transition: opacity .2s linear;
 }
 .about__layer-items {
-    margin: 0px 10px 20px 0;
+    margin-bottom: 20px;
 }
 .about__layer-items .fa {
     background-color: #fff;
@@ -221,7 +221,7 @@ header {
     padding: 10px;    
 }
 .about__layer-save a {
-    font-size: 16px;
+    font-size: 14px;
     color: #fff;
 }
 /* /line 1 **************************************************/
