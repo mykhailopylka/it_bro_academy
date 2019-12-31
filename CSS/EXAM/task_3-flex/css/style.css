@@ -83,20 +83,20 @@ header {
     height: 50px;
 }
 /* Зупиняємо пригання hover **************************************************/
-.head-nav-menu a:::after{
-   content: "";
-  height: 0%;
-  width: 0%;
-  position: absolute;
-  top: -500%;
-  bottom: -500%;
-  left: -500%;
-  right: -500%;
-  margin: auto;
-  border: 0px solid transparent;
-  opacity: 0;
-  z-index: -1;
-  transition: all ease 0.5s;  
+.head-nav-menu a::after{
+    content: "";
+    height: 0%;
+    width: 0%;
+    position: absolute;
+    top: -500%;
+    bottom: -500%;
+    left: -500%;
+    right: -500%;
+    margin: auto;
+    border: 0px solid transparent;
+    opacity: 0;
+    z-index: -1;
+    transition: all ease 0.5s;  
 }
 .head-nav-menu a:hover{
     background-color: #EFEFEF;
@@ -120,20 +120,20 @@ header {
     height: 40px;  
 }
 /* Зупиняємо пригання hover **************************************************/
-.head-nav-items a:::after{
-   content: "";
-  height: 0%;
-  width: 0%;
-  position: absolute;
-  top: -500%;
-  bottom: -500%;
-  left: -500%;
-  right: -500%;
-  margin: auto;
-  border: 0px solid transparent;
-  opacity: 0;
-  z-index: -1;
-  transition: all ease 0.5s;  
+.head-nav-items a::after{
+    content: "";
+    height: 0%;
+    width: 0%;
+    position: absolute;
+    top: -500%;
+    bottom: -500%;
+    left: -500%;
+    right: -500%;
+    margin: auto;
+    border: 0px solid transparent;
+    opacity: 0;
+    z-index: -1;
+    transition: all ease 0.5s;  
 }
 /*  **************************************************/
 .head-nav-items a:hover{
