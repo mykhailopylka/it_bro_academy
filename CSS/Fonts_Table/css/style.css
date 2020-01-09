@@ -10,7 +10,6 @@ body {
     display: flex;
     flex-direction: column;
     background: #000;
-    color: #222222;
     font-family: droid_serifregular; /* задаємо згенерований нами шрифт, та підключений в html */
     font-weight: normal;
     font-style: normal;
@@ -20,11 +19,7 @@ main {
     flex-grow: 1;    
 }
 main, header, footer {
-    box-sizing: border-box;
     width: 100%;
-}
-header, footer {
-    background: #000;
 }
 /* Криша *************************************************************/
 .roof-logo {
