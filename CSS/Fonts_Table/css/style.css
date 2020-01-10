@@ -657,9 +657,7 @@ main, header, footer {
 /* FOOTER                                                    */
 /*************************************************************/
 .basement {
-    display: flex;
-    flex-wrap: wrap;
-    align-items: flex-start;
+    text-align: left;
     padding: 10px 50px 30px;
 }
 .basement a {
