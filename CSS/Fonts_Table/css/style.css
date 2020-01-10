@@ -48,7 +48,6 @@ main, header, footer {
 .wraper {
     display:flex;
     flex-direction: column;
-    justify-content: space-between;
     margin: 50px auto;
     text-align: center;
     width: 100%;
