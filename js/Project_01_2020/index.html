@@ -2,8 +2,8 @@
 <html lang="en">
 <head>
 	<meta charset="UTF-8">
-	<meta name="description" content="Project I">
-	<meta name="keywords" content="Project I">	
+	<meta name="description" content="Моя історія">
+	<meta name="keywords" content="Моя історія">	
 	<link rel="icon" href="img/favicon.png" type="image">
 	<meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
 	<link rel="stylesheet" type="text/css" href="http://maxcdn.bootstrapcdn.com/font-awesome/4.2.0/css/font-awesome.min.css"><!--load all styles Font Awesome-->
@@ -14,6 +14,7 @@
 	<!--[if lt IE 9]>
 	<script src="//html5shiv.google.com/svn/trunk/html5.js"></script>
 	<![endif]-->
+	<script src="js/script.js"></script>
 </head>
 <body>
 	<header role="upside">
@@ -21,6 +22,7 @@
 			<nav class="dropdown">
 				<img src="img/menu_left.svg" alt="menu" onclick="myFunction()" class="dropbtn">
 				<div id="myDropdown" class="dropdown-content">
+					<button class="myDropdown-exit">Exit</button>
 					<a href="#">Home</a>
 					<a href="#about">About</a>
 					<a href="#article_2">article 2</a>
@@ -30,34 +32,15 @@
 					<a href="#contact">Contact</a>
 				</div>
 			</nav>
-			<script>
-			/* When the user clicks on the button, 
-			toggle between hiding and showing the dropdown content */
-			function myFunction() {
-			    document.getElementById("myDropdown").classList.toggle("show");
-			}
-			// Close the dropdown if the user clicks outside of it
-			window.onclick = function(event) {
-			  if (!event.target.matches('.dropbtn')) {
-			    var dropdowns = document.getElementsByClassName("dropdown-content");
-			    var i;
-			    for (i = 0; i < dropdowns.length; i++) {
-			      var openDropdown = dropdowns[i];
-			      if (openDropdown.classList.contains('show')) {
-			        openDropdown.classList.remove('show');
-			      }
-			    }
-			  }
-			}
-			</script>
+			
 			<!-------логотип---------------------------->
-			<div>
+			<div id="logo">
 				<a href="#"><img src="img/logo.png" type="imagen" alt="logo"></a>				
 			</div>
 		</div>		
 	</header>
 	<main role="conteiner">
-		<div class="wrapper">
+		<div class="wrapper" id="mychangebody">
 		<!---------------------------------------->
 			<div class="conteiner-img">
 				<img src="img/hero.png" alt="photo">		
@@ -103,7 +86,7 @@
 				</div>
 			</div>
 	<!----conteiner-second_section transition---------------->
-			<div id="article_2" class="conteiner-all_section second_section transition">
+			<div id="article_2" class="conteiner-all_section second_section transition" onmouseover="changeItem2()" onmouseout="rechangeItem2()">
 				<div class="conteiner-all">
 					<div class="text_all_section-chenger">
 						<h2>
@@ -139,7 +122,7 @@
 				</div>
 			</div>
 	<!----therd_section---------------->
-			<div id="article_3" class="conteiner-all_section therd_section transition">
+			<div id="article_3" class="conteiner-all_section therd_section transition" onmouseover="changeItem3()" onmouseout="rechangeItem3()">
 				<div class="conteiner-all">
 					<div class="text_all_section-chenger">
 						<h2>
@@ -175,7 +158,7 @@
 				</div>
 			</div>
 	<!----forth_section---------------->
-			<div id="article_4" class="conteiner-all_section forth_section transition">
+			<div id="article_4" class="conteiner-all_section forth_section transition" onmouseover="changeItem4()" onmouseout="rechangeItem4()">
 				<!------------------>
 				<div class="forth_section-pillar">
 	      			<ul>
