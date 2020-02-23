@@ -6,8 +6,11 @@ document.getElementById('logo').onclick = function() {
     this.style.animationPlayState = 'paused';
   }
 }
+<<<<<<< HEAD
 
 changes next
+=======
+>>>>>>> origin
 */
 
 
@@ -62,4 +65,8 @@ function rechangeItem3() {
 }
 function rechangeItem4() {
   document.getElementById('mychangebody').style.background = 'rgba(0,15,14,.95)';
+<<<<<<< HEAD
 }
+=======
+}
+>>>>>>> origin
