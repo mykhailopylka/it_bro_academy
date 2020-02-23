@@ -1,0 +1,376 @@
+*, *:befor. *:after {
+ 	-webkit-box-sizing: border-box;
+ 	-moz-box-sizing: border-box;
+ 	box-sizing: border-box;
+ } 
+ .upside-logo {
+	position : relative;
+	width : 100%; /* for IE 6 */
+	height: 200px;
+	background-color: #40E0D0;	
+}
+.upside-logo img {
+	height: 200px;
+	margin-left: 50px;
+}
+.upside-menu {
+	position : absolute;
+	text-align: right;
+	top	: 120px;
+	right : 100px;
+	width : 100%;
+}
+.upside-menu a{
+	display: inline-block;
+	margin-right: 40px;
+	font-size: 20px;
+	text-decoration: none;
+	color: #ffffff;
+}
+.upside-menu a:hover{	
+	color: #07F7FE;	
+}
+ /*====TT=========================*/
+.upside-TT, ol {
+ 	margin: 0 auto;
+ 	width: 800px;
+ 	font-size: 1.0em;
+ 	background: #00FF00;
+ 	list-style-type: square;
+	-webkit-box-shadow: 3px 3px 5px 6px #666;
+	-moz-box-shadow:    3px 3px 5px 6px #666;
+	box-shadow:         3px 3px 5px 6px #666;
+ }
+legend{
+ 	margin: 50px auto 20px;
+ 	font-size: 2.5em;
+ 	font-style: italic;
+ 	font-weight: bold;
+}
+  /*====map=========================*/
+.conteiner-map {
+	position: relative;
+	background-image: url(../img/grass.png);
+	margin: 50px 440px;
+	width: 1000px;
+	height: 1000px;
+}
+  /*====map forest=========================*/
+#conteiner-map-f1 {
+ 	position: absolute;
+ 	top: 100px;
+ 	left: 0px;
+}
+#conteiner-map-f2 {
+ 	position: absolute;
+ 	top: 200px;
+ 	left: 0px;
+}
+ #conteiner-map-f3 {
+ 	position: absolute;
+ 	top: 100px;
+ 	left: 0px;
+}
+#conteiner-map-f4 {
+ 	position: absolute;
+ 	top: 300px;
+ 	left: 0px;
+}
+ #conteiner-map-f5 {
+ 	position: absolute;
+ 	top: 400px;
+ 	left: 0px;
+}
+ #conteiner-map-f6 {
+ 	position: absolute;
+ 	top: 500px;
+ 	left: 0px;
+}
+#conteiner-map-f7 {
+ 	position: absolute;
+ 	top: 600px;
+ 	left: 0px;
+}
+#conteiner-map-f10 {
+ 	position: absolute;
+ 	top: 900px;
+ 	left: 0px;
+}
+#conteiner-map-f10-2 {
+	position: absolute;
+	top: 900px;
+	left: 130px;
+}
+#conteiner-map-f10-3 {
+	position: absolute;
+	top: 900px;
+	left: 260px;
+}
+#conteiner-map-f10-4 {
+	position: absolute;
+	top: 900px;
+	left: 390px;
+}
+/*	====map-g========================*/
+#conteiner-map-g1 {
+	position: absolute;
+	top: 800px;
+	left: 0;
+	height: 100px;
+}
+#conteiner-map-g2 {
+	position: absolute;
+	top: 800px;
+	left: 100px;
+	height: 100px;
+}
+#conteiner-map-g3 {
+	position: absolute;
+	top: 800px;
+	left: 200px;
+	height: 100px;
+}
+#conteiner-map-g4 {
+	position: absolute;
+	top: 800px;
+	left: 300px;
+	height: 100px;
+}
+#conteiner-map-g5 {
+	position: absolute;
+	top: 800px;
+	left: 400px;
+	height: 100px;
+}
+#conteiner-map-g6 {
+	position: absolute;
+	top: 800px;
+	left: 450px;
+	height: 100px;
+}
+/*	====map-v========================*/
+#conteiner-map-v1 {
+	position: absolute;
+	top: 890px;
+	left: 550px;
+	width: 100px;
+}
+#conteiner-map-v2 {
+	position: absolute;
+	top: 790px;
+	left: 550px;
+	width: 100px;
+}
+#conteiner-map-v3 {
+	position: absolute;
+	top: 690px;
+	left: 550px;
+	width: 100px;
+}
+#conteiner-map-v4 {
+	position: absolute;
+	top: 585px;
+	left: 550px;
+	width: 100px;
+}
+#conteiner-map-v5 {
+	position: absolute;
+	top: 480px;
+	left: 550px;
+	width: 100px;
+}
+#conteiner-map-v6 {
+	position: absolute;
+	top: 375px;
+	left: 550px;
+	width: 100px;
+}
+#conteiner-map-v7 {
+	position: absolute;
+	top: 270px;
+	left: 550px;
+	width: 100px;
+}
+#conteiner-map-v8 {
+	position: absolute;
+	top: 165px;
+	left: 550px;
+	width: 100px;
+}
+#conteiner-map-v9 {
+	position: absolute;
+	top: 100px;
+	left: 550px;
+	width: 100px;
+}
+#conteiner-map-v10 {
+	position: absolute;
+	top: 0;
+	left: 550px;
+	width: 100px;
+}
+/*	====bundl========================*/
+.conteiner-map-bundl{
+	position: absolute;
+	width: 70px;
+ 	height: 70px; 	
+ 	top: 150px;
+ 	left: 200px;
+ 	border: 5px solid #000;
+}
+.bundl {
+	position: absolute;
+	top: 300px;	
+ 	left: 39px;
+ 	width: 30px;
+ 	height: 30px; 
+ 	border: 5px solid #000;
+}
+.squad {
+	position: absolute;
+	top: 433px;
+ 	left: 46px;
+	width: 30px;
+	height: 30px;
+	border: 1px solid #D40000;
+	border-radius: 100%;
+}
+.conteiner-map-bundl:before {	
+	content: "";
+	display: block;
+	width: 50px;
+	height: 50px;
+	border: 3px solid #D40000;
+	border-radius: 100%;
+	margin: 7px;
+}
+.conteiner-map-bundl-2{	
+ 	top: 150px;
+ 	left: 400px;
+}
+.conteiner-map-bundl-3{
+	top: 650px;
+	left: 400px;
+}
+/*	====tranch========================*/
+.conteiner-map-tranch-g {
+	position: absolute;
+	top: 155px;
+	left: 290px;
+	height: 50px;
+	width: 100px;
+}
+.conteiner-map-tranch-v {
+	position: absolute;
+	top: 240px;
+	left: 410px;
+	width: 60px;
+}
+.v2 {
+	top: 300px;
+}
+.v3 {
+	top: 360px;
+}
+.v4 {
+	top: 420px;
+}
+.v5 {
+	top: 480px;
+}
+.v6 {
+	top: 540px;
+}
+.v7 {
+	top: 580px;
+}
+/*	====headquarters========================*/
+.conteiner-map-headquarters {
+	position: absolute;
+	width: 70px;
+ 	height: 150px; 	
+ 	top: 400px;
+ 	left: 200px;
+ 	border: 5px solid #000;
+}
+.headquarters {
+	position: absolute;
+	width: 30px;
+ 	height: 47px; 	
+ 	top: 360px;
+ 	left: 40px;
+ 	border: 5px solid #000;
+}
+.conteiner-map-headquarters:after {	
+	content: "";
+	display: block;
+	width: 50px;
+	height: 50px;
+	border: 3px solid #000;
+	border-radius: 100%;
+	margin: 45px 7px;
+	border-color: red;
+}
+.headquarters-tranch-g {
+	top: 450px;
+	width: 120px;
+}
+/*	====artan========================*/
+.conteiner-map-arta {
+	position: absolute;
+	top: 700px;
+	left: 0;
+	height: 100px;
+	width: 140px;
+}
+/*	====tank========================*/
+.conteiner-map-tank {
+	position: absolute;
+	top: 0;
+	left: 130px;
+	height: 100px;
+	width: 140px;
+}
+/*	====description========================*/
+ .conteiner-description {
+ 	position: fixed;
+ 	display: flex;
+ 	width: 400px;
+ 	height: 500px;
+ 	right: 40px;
+ 	top: 300px;
+ 	text-align: left;
+ 	background-color: #66DDAA;
+ 	-webkit-box-shadow: 3px 3px 5px 6px #666;
+	-moz-box-shadow:    3px 3px 5px 6px #666;
+	box-shadow:         3px 3px 5px 6px #666;
+ }
+ .conteiner-description ul, li {
+ 	list-style-type: none;
+ 	font-size: 1.0em;
+ }
+ .conteiner-description img {
+ 	width: 50px;
+ 	height: 50px;
+ }
+.conteiner-description-tab2 li{
+	margin: 10px auto 40px;
+}
+ /* =========== basment ==========*/
+.basment {
+	position: sticky;
+	background-color: #000000;
+	left: 0; bottom: -1000;
+	width: 100%;
+	height: 100px;	
+	text-align: center;
+	margin-top: 20px;
+}
+.basment a {
+	display: block;
+	text-decoration: none;
+	color: #ffffff;
+	font-size: 30px;
+	font-style: italic;
+	padding: 20px;
+}

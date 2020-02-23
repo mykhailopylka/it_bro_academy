@@ -1,0 +1,39 @@
+<!DOCTYPE html>
+<html lang="uk">
+<head>	
+	<title>Форма для вступу в ЗСУ</title>
+	<meta http-equiv="Content-type" content="text/html;charset=UTF-8"/>
+	<link rel="icon" href="img/favicon.png" type="image/x-icon">
+</head>
+<body>
+<main class="my-container">
+	<section id='aplication'>		
+		<form name="questionnaire" action="" method="POST">
+			<fieldset>
+				<legend>Заповніть форму для вступу в ЗСУ</legend>				
+		            <p>		                
+		                <input required type="text" id="pib" name="pib" placeholder="ПІБ">
+		                <label for="pib">ПІБ: </label>
+		            </p>
+		            <p>		                
+		                <input type="date" id="date" name="date">
+		                <label for="date">Дата народження: </label>
+		            </p>
+		            <br>
+		            <label for="profile_file">Завантажити документи з комп'ютера</label>
+					<input type="file" title="Оберіть файл для завантаження" id="profile_file">
+					<br>
+					<p>
+						<button type="submit" value="send">
+							Відправити анкету
+						</button>
+						<button type="reset" value="reset">
+							Скинути дані
+						</button>
+					</p>
+			</fieldset>
+		</form>
+	</section>		
+</main>
+</body>
+</html>

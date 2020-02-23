@@ -1,0 +1,199 @@
+<!DOCTYPE html>
+<html lang="uk">
+<head>
+	<meta charset="UTF-8">
+	<meta name="description" content="Вебінаріум">
+	<meta name="keywords" content="моя бібліотека вебінаріум">	
+	<link rel="icon" href="img/favicon.png" type="image">
+	<link rel="stylesheet" href="css/normalize.css">
+	<link rel="stylesheet" href="css/style.css">
+	<title>position with normalize</title>
+	<!--[if lt IE 9]>
+	<script src="//html5shiv.google.com/svn/trunk/html5.js"></script>
+	<![endif]-->
+</head>
+<body>
+	<header role="upside">
+		<div class="upside-logo">
+			<a href="#"><img src="img/gerb.png" alt="logo"></a>
+			<div class="upside-menu">
+				<a href="#">Головна</a>
+				<a href="#basment">Контакти</a>
+				<a href="#">Про проект</a>
+				<a href="#">Links</a>
+				<a href="#respond_service">Відгуки</a>
+			</div>
+		</div>
+	</header>
+	<main role="conteiner">
+		<!-- TT -->
+		<legend>
+			ТЗ:
+		</legend>
+		<p class="upside-TT">
+			<strong>				
+				<ol>
+					<li>
+						Додаємо reset або normalize до проекту
+					</li>
+					<li>
+						Створюємо детальну карту будь якої позиції, використовуючи
+						- display: block, display: inline-block, inline;
+						- position relative, absolute
+						- повідомлення яке буде пояснювати, що це - чіпляємо фіксовано, щоб воно не змінювало положення в залежності скролінгу. повідомлення знаходиться всередині будь якої геометричної форми. (також це може бути iframe з внутрішнім скролінгом) (ви можете причепити зовнішній документ) з поясненням-легендою цієї позиції
+					</li>
+					<li>
+						Бліндажі, техніку, точки з кулеметами розтавляємо по усьому документу. Чим ближче до реальності буде ця мапа тим крутіше. Відповідно, щоб це все могло функціонувати - активно юзаємо position
+					</li>
+					<li>
+						ЧАСТИНУ КОМПОНЕНТІВ - (наприклад Штаб) прописуємо через display static і юзаємо блочну/боксову модель, щоб це було норм в плані проекту
+					</li>
+					<li>
+						Декілька компонентів повинні мати всередині себе якісь елементи (кружочок - який символізує солдата, наприклад), які ви маєте створити через псевдо Before або After та причепити всередину (вашого квадрата - якщо квадрат це бліндаж) і виставити всередині задопомогою position absolute, relative (деякі об'єкти можуть не містити
+					</li>
+					<li>
+						(Не забуваємо про властивості довжини і ширини для об'єктів, кольорів, та можливостей задати малюнок всередину квадратику чи кружка) (Да, частина компонентів має бути кружками (наприклад вогнева точка)
+					</li>
+					<li>
+						Має бути щонайменше 7 об'єктів на мапі.
+					</li>
+				</ol>
+			</strong>
+		</p>
+		<section class="conteiner-all">
+			<div class="conteiner-map">
+<!-- vertical forest -->
+				<img src="img/forest.png">
+				<img src="img/forest.png" id="conteiner-map-f1">
+				<img src="img/forest.png" id="conteiner-map-f2">
+				<img src="img/forest.png" id="conteiner-map-f3">
+				<img src="img/forest.png" id="conteiner-map-f4">
+				<img src="img/forest.png" id="conteiner-map-f5">
+				<img src="img/forest.png" id="conteiner-map-f6">
+				<img src="img/forest.png" id="conteiner-map-f7">
+				<img src="img/forest.png" id="conteiner-map-f10">
+<!-- gorizontal road -->
+				<img src="img/road-g.png" id="conteiner-map-g1">
+				<img src="img/road-g.png" id="conteiner-map-g2">
+				<img src="img/road-g.png" id="conteiner-map-g3">
+				<img src="img/road-g.png" id="conteiner-map-g4">
+				<img src="img/road-g.png" id="conteiner-map-g5">
+				<img src="img/road-g.png" id="conteiner-map-g6">
+<!-- vertical road -->
+				<img src="img/road-v.png" id="conteiner-map-v1">
+				<img src="img/road-v-1.png" id="conteiner-map-v2">
+				<img src="img/road-v.png" id="conteiner-map-v3">
+				<img src="img/road-v.png" id="conteiner-map-v4">
+				<img src="img/road-v.png" id="conteiner-map-v5">
+				<img src="img/road-v.png" id="conteiner-map-v6">
+				<img src="img/road-v.png" id="conteiner-map-v7">
+				<img src="img/road-v.png" id="conteiner-map-v8">
+				<img src="img/road-v.png" id="conteiner-map-v9">
+				<img src="img/road-v.png" id="conteiner-map-v10">
+<!-- gorizontal forest -->
+				<img src="img/forest.png" id="conteiner-map-f10-2">
+				<img src="img/forest.png" id="conteiner-map-f10-3">
+				<img src="img/forest.png" id="conteiner-map-f10-4">
+<!-- bundl -->
+				<div class="conteiner-map-bundl"></div>
+				<div class="conteiner-map-bundl conteiner-map-bundl-2"></div>
+				<div class="conteiner-map-bundl conteiner-map-bundl-3"></div>
+<!-- trench -->
+				<img src="img/tranch-g.png" class="conteiner-map-tranch-g">
+				<ul>
+					<li>
+						<img src="img/tranch-v.png" class="conteiner-map-tranch-v">
+					</li>
+					<li>
+						<img src="img/tranch-v.png" class="conteiner-map-tranch-v v2">
+					</li>
+					<li>
+						<img src="img/tranch-v.png" class="conteiner-map-tranch-v v3">
+					</li>
+					<li>
+						<img src="img/tranch-v.png" class="conteiner-map-tranch-v v4">
+					</li>
+					<li>
+						<img src="img/tranch-v.png" class="conteiner-map-tranch-v v5">
+					</li>
+					<li>
+						<img src="img/tranch-v.png" class="conteiner-map-tranch-v v6">
+					</li>
+					<li>
+						<img src="img/tranch-v.png" class="conteiner-map-tranch-v v7">
+					</li>
+				</ul>
+<!-- headquarters -->
+				<div class="conteiner-map-headquarters"></div>
+				<img src="img/tranch-g.png" class="conteiner-map-tranch-g headquarters-tranch-g">
+<!-- arta -->
+				<img src="img/arta.png" class="conteiner-map-arta">
+<!-- tank -->
+				<img src="img/tank.png" class="conteiner-map-tank">
+			</div>
+<!-- description -->
+			<div class="conteiner-description">
+				<ul class="conteiner-description-tab1">
+					<li>
+						<img src="img/forest.png">
+					</li>
+					<li>
+						<img src="img/road-g.png">
+					</li>
+					<li>
+						<img src="img/tranch-g.png">
+					</li>
+					<li>
+						<img src="img/arta.png">
+					</li>
+					<li>
+						<img src="img/tank.png">
+					</li>
+					<li >
+						<div class="bundl">
+						</div>
+					</li>
+					<li>
+						<div class="headquarters"></div>
+					</li>					
+					<li>
+						<div class="squad"></div>
+					</li>
+				</ul>
+
+				<ul class="conteiner-description-tab2">
+					<li>
+						- Лісосмуга
+					</li>
+					<li>
+						- Дорога
+					</li>
+					<li>
+						- Шанці
+					</li>
+					<li>
+						- Розрахунок артилерії
+					</li>
+					<li>
+						- Танковий взвод
+					</li>
+					<li >
+						- Довготривала оборонна точка 
+					</li>
+					<li>
+						- Штаб
+					</li>					
+					<li>
+						- Бойовий розрахунок
+					</li>
+				</ul>
+			</div>
+		</section>
+	</main>
+	<footer role="downside">
+		<div class="basment">
+			<a href="https://www.facebook.com/profile.php?id=100008885566879">Розробив Пилка Михайло 2019</a>
+	</div>
+	</footer>
+</body>
+</html>

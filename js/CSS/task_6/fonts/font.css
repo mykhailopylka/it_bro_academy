@@ -1,0 +1,31 @@
+
+@font-face {
+    font-family: 'baskvl';
+    src: url('baskvl.ttf') format('truetype');
+    font-weight: normal;
+    font-style: normal;
+
+}@font-face {
+    font-family: 'droid_serifregular';
+    src: url('academia_libera-webfont.woff2') format('woff2'),
+         url('academia_libera-webfont.woff') format('woff');
+    font-weight: normal;
+    font-style: normal;
+
+}
+@font-face {
+    font-family: 'antique_olivebold';
+    src: url('antique_olive_bold-webfont.woff2') format('woff2'),
+         url('antique_olive_bold-webfont.woff') format('woff');
+    font-weight: normal;
+    font-style: normal;
+
+}
+@font-face {
+    font-family: 'wolfgang_amadeus_mozartRg';
+    src: url('wolfgang_amadeus_mozart-webfont.woff2') format('woff2'),
+         url('wolfgang_amadeus_mozart-webfont.woff') format('woff');
+    font-weight: normal;
+    font-style: normal;
+
+}

@@ -1,0 +1,150 @@
+<!DOCTYPE html>
+<html lang="uk">
+<head>
+	<meta charset="UTF-8">
+	<meta name="description" content="Вебінаріум">
+	<meta name="keywords" content="моя бібліотека вебінаріум">	
+	<link rel="icon" href="img/favicon.png" type="image">
+	<link rel="stylesheet" href="css/normalize.css">
+	<link rel="stylesheet" href="css/style.css">
+	<title>Макет розташування блоків</title>
+	<!--[if lt IE 9]>
+	<script src="//html5shiv.google.com/svn/trunk/html5.js"></script>
+	<![endif]-->
+</head>
+<body>
+	<header role="upside">
+		<div class="upside-logo">
+			<a href="#"><img src="img/gerb.png" alt="logo"></a>
+			<div class="upside-menu">
+				<a href="#">Головна</a>
+				<a href="#basment">Контакти</a>
+				<a href="#">Про проект</a>
+				<a href="#">Links</a>
+				<a href="#respond_service">Відгуки</a>
+			</div>
+		</div>
+	</header>
+	<main role="conteiner">
+		<p class="intro">
+				Робимо наступний макет. Розміри на разі значення не мають як і точність кольору. Найважливіше розташування, а також:
+
+				- чередування кольорів має бути виконано задопомогою спеціальних css властивостей для парних і не парних елементів. (кольорів блоків і кольору шрифту в них)
+
+				- блоки різнокольорові мають знаходитись у блоці з фіксованою висотою та з скролінгом всередині (для цього можете додати ще кілька кольорових блоків у блок).
+
+				- на наведення блок має ставати прозороим, текст має ставати з заглавних літер та змінювати колір
+
+				- навігація (може працювати за вашого бажання по якорям) а також на наведення пунтку навігації він має збільшуватись та ставати з заглавних літер.
+			</p>
+		<div class="conteiner-main">			
+			<div class="conteiner-navigation">
+				<nav>
+					<legend>
+						Навігація по блокам:
+					</legend>
+					<ul>
+						<li>
+							<a href="#conteiner-leyer-3-1">Казарма 1</a>
+						</li>
+						<li>
+							<a href="#conteiner-leyer-3-2">Склад</a>
+						</li>
+						<li>
+							<a href="#conteiner-leyer-3-3">Харчовий блок</a>
+						</li>
+						<li>
+							<a href="#conteiner-leyer-3-3">Штаб</a>
+						</li>
+						<li>
+							<a href="#conteiner-leyer-3-5">Сховище</a>
+						</li>
+						<li>
+							<a href="#conteiner-leyer-3-6">Зброярня</a>
+						</li>
+					</ul>
+				</nav>
+			</div>
+			<div class="conteiner-leyer-1">
+			</div>
+			<div class="conteiner-leyer-2">
+			</div>
+			<div class="conteiner-leyer-3">
+				<nav>
+					<ul>
+						<li id="conteiner-leyer-3-1" class="asf">
+							Казарма 1
+						</li>
+						<li id="conteiner-leyer-3-2">
+							Склад
+						</li>
+						<div class="conteiner-leyer-3-pair" id="conteiner-leyer-3-3">
+							<li id="conteiner-leyer-3-pair-H">
+								Харчовий блок
+							</li>
+							<li id="conteiner-leyer-3-pair-H">
+								Штаб
+							</li>
+						</div>
+						
+						<li id="conteiner-leyer-3-5">
+							Сховище
+						</li>
+						<li id="conteiner-leyer-3-6">
+							Зброярня
+						</li>
+						<li>
+							Казарма 1
+						</li>
+						<li>
+							Склад
+						</li>
+						<div class="conteiner-leyer-3-pair">
+							<li id="conteiner-leyer-3-pair-H">
+								Харчовий блок
+							</li>
+							<li id="conteiner-leyer-3-pair-H">
+								Штаб
+							</li>
+						</div>
+						
+						<li>
+							Сховище
+						</li>
+						<li>
+							Зброярня
+						</li>
+						<li>
+							Казарма 1
+						</li>
+						<li>
+							Склад
+						</li>
+						<div class="conteiner-leyer-3-pair">
+							<li id="conteiner-leyer-3-pair-H">
+								Харчовий блок
+							</li>
+							<li id="conteiner-leyer-3-pair-H">
+								Штаб
+							</li>
+						</div>
+						
+						<li>
+							Сховище
+						</li>
+						<li>
+							Зброярня
+						</li>
+					</p>
+					</ul>
+				</nav>
+			</div>
+		</div>
+	</main>
+	<footer role="downside">
+		<div class="basment">
+			<a href="https://www.facebook.com/profile.php?id=100008885566879">Розробив Пилка Михайло 2019</a>
+		</div>
+	</footer>
+</body>
+</html>

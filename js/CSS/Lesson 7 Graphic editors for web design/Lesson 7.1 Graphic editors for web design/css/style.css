@@ -1,0 +1,231 @@
+*, *:befor. *:after {
+-webkit-box-sizing: border-box;
+-moz-box-sizing: border-box;
+box-sizing: border-box;
+}
+body {
+    display: flex;
+    flex-direction: column;
+    max-width: 1920px;
+    width: 100%;
+    max-height: 3685px;
+    font-family: montserratregular;
+}
+main {
+    flex-grow: 1;
+}
+main, header, footer {
+    box-sizing: border-box;
+    width: 100%;
+}
+li {
+    list-style-type: none;
+}
+/*************************************************************/
+/* MAIN                                                   */
+/*************************************************************/
+.block_first {
+    margin: 10.256445047489824% 0 0 20.3125%;
+    width: 34.21875%;
+    height: 12.21166892808684%;
+    border: 10px solid #E7F2FD;
+}
+.block_first-up {
+    font-family: montserratbold;
+    font-size: 68px;
+    color: #344F5A;
+    width: 120%;
+    margin: 96px 0 0 90px;
+}
+.block_first-down {
+    width: 700px;
+    font-size: 22px;
+    color: #0679E3;
+    margin: 30px 0 0 90px;
+}
+/***line arrow**********************************************/
+.block_first-line {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+    margin-top: 120px;
+}
+.line {
+    width: 150px;
+}
+.line hr {
+    transform:rotate(90deg);
+    color: #E7F1FD;
+    margin-bottom: 53px;
+}
+.arrow ::before {
+    position: relative;
+    content: "";
+    display: inline-block;
+    width: 0.6em;
+    height: 0.6em;
+    border-right: 0.2em solid #E7F1FD;
+    border-top: 0.2em solid #E7F1FD;
+    transform: rotate(135deg);
+    margin-right: 0.6em;    
+}
+.arrow {
+    margin-right: 30px;
+}
+.arrow-second {
+    opacity: 60%;
+}
+.arrow-therd {
+    opacity: 30%;
+}
+/* block_second **************************************************/
+.block_second {
+    display: flex;
+    height:592px;
+    width: 100%;
+    margin-top: 210px;
+}
+.block_second img {
+    width: 660px;
+    height: 592px;
+}
+.block_second-right {
+    display: flex;
+    width: 70%;
+    background-color: #F5F6F8;
+}
+.block_second-right-first {
+    width: 657px;
+    height: 400px;
+    background-color: #FFFFFF;
+    margin: 80px 0 0 -270px;
+    border-right: 5px solid #0679E3;    
+}
+.block_second-right-first-up {
+    color: #344F5A;
+    font-size: 32px;
+    font-weight: 500;
+    margin: 110px 0 0 97px;
+    width: 299px;
+    height: 98px;
+}
+.block_second-right-first-down {
+    margin: 0 0 0 97px;
+    width: 462px;
+    height: 110px;
+    color: #8A9DB1;
+}
+.block_second-right-second {
+    width: 463px;
+    height: 400px;
+    background-color: #0679E3;
+    margin: 80px 0 0 20px;
+    color: #fff;
+}
+.block_second-right-second ul {
+    margin: 90px 0 0 58px;
+    line-height: 2.5em;
+}
+.block_second-right-second  ul {
+    list-style-image: url(../img/dash.png); /* Вигляд маркера */
+}
+/* block_third **************************************************/
+.block_third {
+    display: flex;
+    height:592px;
+    width: 100%;
+    margin-top: 210px;
+}
+.block_third img {
+    width: 660px;
+    height: 592px;
+    z-index: 1;
+}
+.block_third-left {
+    display: flex;
+    width: 70%;
+    background-color: #F5F6F8;
+    z-index: 2;
+}
+.block_third-left-first {
+    width: 657px;
+    height: 400px;
+    background-color: #FFFFFF;
+    margin: 80px 0 0 400px;
+    border-right: 5px solid #0679E3;
+}
+.block_third-left-first-up {
+    color: #344F5A;
+    font-size: 32px;
+    font-weight: 500;
+    margin: 110px 0 0 97px;
+    width: 299px;
+    height: 98px;
+}
+.block_third-left-first-down {
+    margin: 0 0 0 97px;
+    width: 462px;
+    height: 110px;
+    color: #8A9DB1;
+}
+.block_third-left-second {
+    width: 463px;
+    height: 400px;
+    background-color: #0679E3;
+    margin: 80px 0 0 20px;
+    color: #fff;
+}
+.block_third-left-second ul {
+    margin: 90px 0 0 58px;
+    line-height: 2.5em;
+}
+ .block_third-left-second  ul {
+    list-style-image: url(../img/dash.png); /* Вигляд маркера */
+   }
+/* corection LINE for third **************************************************/
+.second_line {
+    margin: 680px 0 0 -890px;
+}
+/* block_fourth **************************************************/
+.block_fourth {
+    display: flex;
+    height:592px;
+    width: 100%;
+    margin-top: 210px;
+}
+/* block_fifth **************************************************/
+.block_fifth {
+    display: flex;
+    flex-direction: column;
+    justify-content: space-around;
+    width: 657px;
+    height: 310px;
+    margin: 210px 0 0 390px;
+    border: 10px solid #E7F2FD;
+}
+.block_fifth p {
+    font-size: 22px;
+    color: #0679E3;
+    width: 656px;
+    margin: 72px 0 46px 97px;
+}
+.block_fifth input {
+    width: 270px;
+    height: 56px;
+    font-size: 20px;
+    color: #fff;
+    background-color: #0679E3;
+    margin: 0 0 71px 97px;
+}
+/*************************************************************/
+/* FOOTER                                                    */
+/*************************************************************/
+.basement {
+  text-align: left;
+  padding: 20px 0;
+}
+/*************************************************************/
+/* END FOOTER                                                    */
+/*************************************************************/

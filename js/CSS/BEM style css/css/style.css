@@ -1,0 +1,22 @@
+/* селектор 
+БЕМ - блок-елемент-модифікаток
+ */
+body{
+/*	margin-top: 100px;
+	margin-left: 100px;
+	margin-right: 100px;
+можна записати скорочено:*/
+margin: 100px 100px 0px;
+}
+.content__title {
+font-size: 40px;
+}
+.content__text {
+	color: #DE37FF;
+}
+.content__aricle_title{
+font-size: 30px;
+}
+.content__text--red{
+	color: #05FF09;
+}

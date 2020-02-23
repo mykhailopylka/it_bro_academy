@@ -1,0 +1,81 @@
+<!DOCTYPE html>
+<html lang="uk">
+<head>
+	<meta charset="UTF-8">
+	<meta name="description" content="Вебінаріум">
+	<meta name="keywords" content="моя бібліотека вебінаріум">	
+	<link rel="icon" href="../../img/favicon.png" type="image">
+	<link rel="stylesheet" href="../../css/style.css">
+	<title>21 properys css</title>
+	<!--[if lt IE 9]>
+	<script src="//html5shiv.google.com/svn/trunk/html5.js"></script>
+	<![endif]-->
+</head>
+<body>
+<!-- hearer-->		
+<header role="upside">
+	<section>
+		<div class="upside-logo">
+			<a href="https://www.facebook.com/profile.php?id=100008885566879"><img src="../../img/black.png" alt="logo"></a>
+			<div class="upside-menu">
+				<a href="#">Домашня</a>
+				<a href="#">Контакти</a>
+				<a href="#">Про проект</a>
+				<a href="#">Links</a>
+				<a href="../../index.html?#respond_service">Відгуки</a>
+			</div>
+		</div>
+	</section>
+	<h1>
+		<a href="../index.html" id="hedliner" class="correct_color">ВЕБІНАРІУМ</a>
+	</h1>
+</header>
+<main role='conteiner'>		
+	<section>
+		<!-- контейнер для виводу елементів в одному ряді  -->
+		<div class="box">
+			<p id="font_size">
+				<b><u>grid:</u></b>
+				<br>
+				<'grid-template'> | <'grid-template-rows'> / [ auto-flow && dense? ] <'grid-auto-columns'>? | [ auto-flow && dense? ] <'grid-auto-rows'>? / <'grid-template-columns'>;
+				<br>
+				Властивість grid являє собою набір горизонтальних і вертикальних ліній, які перетинаються - один набір визначає стовпці, а інший рядки. Елементи можуть бути поміщені в сітку, відповідно рядках і стовпцях.
+			</p>
+			<!-- ======================== -->
+			<div id="container">
+			  <div></div>
+			  <div></div>
+			  <div></div>
+			  <div></div>
+			  <div></div>
+			  <div></div>
+			  <div></div>
+			  <div></div>
+			  <div></div>
+			  <div></div>
+			</div>
+
+			<p>
+				Щоб розмістити так div-и, ми використали <strong>grid-template-columns</strong> (для стовпців) та <strong>grid-template-rows</strong> (і рядків). Простіше кажучи, прописали: має бути 5 рядків та 2 стовпці:
+			</p>
+
+			<p>
+				<code>grid-template-rows: repeat(5, 60px);<br>grid-template-columns: repeat(2, 60px);</code>
+			</p>
+
+			<p>
+				Властивість <strong>grid</strong> допомагає привести цей запис в більш короткий вигляд:
+			</p>    
+		    <!-- логотип  -->
+		    <div class="main_logo">
+				<a href="../../index.html"><img src="../../img/sova.jpg" alt="logo"></a>
+			</div>
+			</div>
+		</div>
+	</section>	
+</main>
+<footer role='footer'>
+	<a href="https://www.facebook.com/profile.php?id=100008885566879">Розробив Пилка Михайло 2019</a>
+</footer>
+</body>
+</html>

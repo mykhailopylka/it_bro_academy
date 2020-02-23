@@ -1,0 +1,46 @@
+*, *:befor. *:after {
+-webkit-box-sizing: border-box;
+-moz-box-sizing: border-box;
+box-sizing: border-box;
+}
+html, body {
+    height: 100%;
+}
+body {
+    display: flex;
+    flex-direction: column;
+    background: #ffffff;
+    color: #222222;
+    font-family: Arial, Helvetica, sans-serif;
+}
+main {
+    flex-grow: 1;
+}
+main, header, footer {
+    box-sizing: border-box;
+    padding: 20px;
+    width: 100%;
+}
+header, footer {
+    background: #008080;
+    color: #ffffff;
+}
+.content p {
+    margin: 10px 0;
+    font-size: 16px;
+    line-height: 1.8;
+}
+.cont-1 {
+    display: inline-flex;
+    width: 100%;
+    height: 200px;
+}
+.cont-2 {
+    flex-grow: 1;
+    background-color: #000;
+    color: #fff;
+}
+.cont-3 {
+    flex-grow: 3;
+    background-color: red;
+}

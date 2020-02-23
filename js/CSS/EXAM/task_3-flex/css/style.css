@@ -1,0 +1,446 @@
+*, *:befor. *:after {
+-webkit-box-sizing: border-box;
+-moz-box-sizing: border-box;
+box-sizing: border-box;
+}
+html, body {
+    height: 100%;
+}
+body {
+    display: flex;
+    flex-direction: column;
+    width: 100%;
+    max-width: 1980px;
+    overflow-y: scroll;
+    font-family: open_sansregular;
+}
+main {
+    flex-grow: 1;
+}
+a {
+    text-decoration: none;
+}
+/*************************************************************/
+/* HEADER                                                    */
+/*************************************************************/
+header {    
+    position: fixed;
+    border-bottom: 1px solid #EFEFEF;
+    min-height: 4em;
+    background-color: #fff;
+    width: 100%;
+    z-index: 100;
+}
+.head-nav {
+    display: flex;
+    width: 100%;
+    padding-top: 10px;
+}
+.head-nav-logo {
+    width: 40px;
+    height: 40px;
+    margin-left: 20px;
+}
+/* search **************************************************/
+.head-nav-search {
+  flex: 2;
+  padding-left: 20px;
+}
+.head-nav-search input{
+    background-color: #EFEFEF;
+    border:none;
+    color:#333;
+    font-size:16px;
+    font-weight:600;
+    outline:none;
+    padding-left: 10px;
+    height: 40px;
+    width: 98%;
+    border-radius: 10px;
+}
+/* menu **************************************************/
+.head-nav-menu {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    text-align: center;
+    width: 20%;
+    height: 30px;
+    border-right: 2px solid #8E8E8E;
+    margin-top: 10px;
+}
+.head-nav-menu a{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    margin-right: 40px;
+    font-size: 16px;    
+    font-weight: 700;
+    color: #8E8E8E;
+    width: 150px;
+    height: 50px;
+}
+/* Зупиняємо пригання hover **************************************************/
+.head-nav-menu a::after{
+    content: "";
+    width: 0%;
+    height: 0%;
+    position: absolute;
+    top: -500%;
+    bottom: -500%;
+    left: -500%;
+    right: -500%;
+    margin: auto;
+    border: 0px solid transparent;
+    opacity: 0;
+    z-index: -1;
+    transition: all ease 0.5s;
+}
+.head-nav-menu a:hover{
+    background-color: #EFEFEF;
+    border-radius: 30px;
+    color: #333;
+}
+/* nav-items ********************************************/
+.head-nav-items {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    width: 150px;
+    height: 50px;
+    margin: 0 20px;
+}
+.head-nav-items a {
+    display: flex;
+    align-items: center;
+    justify-content: center; 
+    width: 40px;
+    height: 40px;  
+}
+/* Зупиняємо пригання hover **************************************************/
+.head-nav-items a::after{
+   content: "";
+  height: 0%;
+  width: 0%;
+  position: absolute;
+  top: -500%;
+  bottom: -500%;
+  left: -500%;
+  right: -500%;
+  margin: auto;
+  border: 0px solid transparent;
+  opacity: 0;
+  z-index: -1;
+  transition: all ease 0.5s;  
+}
+/*  **************************************************/
+.head-nav-items a:hover{
+    background-color: #EFEFEF;
+    border-radius: 40px;
+}
+.head-nav-items-message {
+    height: 24px;
+    width: 24px;
+    margin-top: 5px;
+}
+.fa {
+    width: 24px;
+    height: 24px;
+    color: #8E8E8E;
+    font-size: 25px;
+}
+/*************************************************************/
+/* MAIN                                                   */
+/*************************************************************/
+.conteiner {
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+    justify-content: space-between;
+    width: 91%;
+    margin: 70px auto 0;
+}
+/* змінює курсор на збільшуюче скло *************************/
+.top_layer { 
+    cursor: -moz-zoom-in; 
+    cursor: -webkit-zoom-in; 
+    cursor: zoom-in; 
+}
+/* top_layer  клас який додає фільтр на картинку*************/
+.top_layer:hover  img {
+    opacity: 0.9;
+}
+.top_layer {
+    position: relative;
+    border-radius: 23px;
+    background: #000;
+}
+.top_layer img {
+    display: block;
+    transition: opacity .1s linear;
+}
+/* about__layer вспливаюче меню **************************************************/
+.about__layer{
+    display: flex;
+    flex-direction: column;
+    align-items: flex-end;
+    justify-content: space-between;
+    width: 100%;
+    height: 100%;
+
+    
+    text-align: center;
+    opacity: 0;
+
+    position: absolute;
+    z-index: 100;
+    transform: translate3d(-5%, -97%, 0);
+
+    transition: opacity .2s linear;
+}
+.about__layer-items {
+    margin-bottom: 20px;
+}
+.about__layer-items .fa {
+    background-color: #fff;
+    border-radius: 40px;
+    font-size: 16px;
+    color: #2E2E2E;
+    width: 35px;
+    height: 25px;
+    margin-right: 5px;
+    padding-top: 10px;
+}
+.top_layer:hover .about__layer{
+    opacity: 1;
+}
+
+.about__layer-save {
+    background-color: #FF0800;
+    border-radius: 30px;
+    padding: 10px;    
+}
+.about__layer-save a {
+    font-size: 14px;
+    color: #fff;
+}
+/* /line 1 **************************************************/
+.line-1 {
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;    
+    padding-top: 20px;
+    height: 1780px;
+    
+}
+.line-1 img {
+    width: 232px;
+    border-radius: 20px;
+}
+.ind_1 img{
+    height: 300px;    
+}
+.ind_8 img{
+    height: 480px;
+}
+.ind_15 img{
+    height: 340px;
+}
+.ind_22 img{
+    height: 340px;
+}
+.ind_29 img{
+    height: 250px;
+}
+/*=========== /line 1 ==============*/
+
+/*=========== line 2 ==============*/
+.line-2 {
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;    
+    padding-top: 20px;
+    height: 1630px;
+}
+.line-2 img {
+    width: 232px;
+    border-radius: 20px;    
+}
+.ind_2 img{   
+    height: 260px;
+}
+.ind_9 img{
+    height: 300px;
+}
+.ind_16 img{
+    height: 530px;
+}
+.ind_23 img{
+    height: 320px;    
+}
+.ind_30 img{
+    height: 150px;    
+}
+/*=========== /line 2 ==============*/
+
+
+/*=========== line 3 ==============*/
+.line-3 {
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;    
+    padding-top: 20px;
+    height: 1670px;
+}
+.line-3 img {
+    width: 232px;
+    border-radius: 20px;
+}
+.ind_3 img{
+    height: 270px;
+}
+.ind_10 img{
+    height: 270px;
+}
+.ind_17 img{
+    height: 295px;
+}
+.ind_24 img{
+    height: 370px;
+}
+.ind_31 img{
+    height: 385px;    
+}
+/*=========== /line 3 ==============*/
+
+
+/*=========== line 4 ==============*/
+.line-4 {
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;    
+    padding-top: 20px;
+    height: 1880px;
+}
+.line-4 img{
+    width: 232px;
+    border-radius: 20px;    
+}
+.ind_4 img{
+    height: 370px;
+}
+.ind_11 img{
+    height: 300px;
+}
+.ind_18 img{
+    height: 300px;
+}
+.ind_25 img{
+    height: 450px;
+}
+.ind_32 img{
+    height: 380px;    
+}
+/*=========== /line 4 ==============*/
+
+/*=========== line 5 ==============*/
+.line-5 {
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;    
+    padding-top: 20px;
+    height: 1730px;
+}
+.line-5 img {
+    width: 232px;
+    border-radius: 20px;    
+}
+.ind_5 img{
+    height: 270px;
+}
+.ind_12 img{
+    height: 350px;
+}
+.ind_19 img{
+    height: 340px;
+}
+.ind_26 img{
+    height: 340px;
+}
+.ind_33 img{
+    height: 350px;
+}
+/*=========== line 6 ==============*/
+.line-6 {
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;    
+    padding-top: 20px;
+    height: 1830px;
+}
+.line-6 img {
+    width: 232px;
+    border-radius: 20px;    
+}
+.ind_6 img{
+    height: 300px;
+}
+.ind_13 img{
+    height: 250px;
+}
+.ind_20 img{
+    height: 290px;
+}
+.ind_27 img{
+    height: 140px;
+}
+.ind_34 img{
+    height: 440px;
+}
+.ind_36 img{
+    height: 310px;
+}
+
+/*=========== line 7 ==============*/
+.line-7 {
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;    
+    padding-top: 20px;
+    height: 1830px;
+}
+.line-7 img {
+    width: 232px;
+    border-radius: 20px;    
+}
+.ind_7 img{
+    height: 150px;
+}
+.ind_14 img{
+    height: 350px;
+}
+.ind_21 img{
+    height: 250px;
+}
+.ind_28 img{
+    height: 330px;
+}
+.ind_35 img{
+    height: 420px;
+}
+.ind_37 img{
+    height: 220px;
+}
+/*************************************************************/
+/* FOOTER                                                    */
+/************************************************************/
+.basement {
+  text-align: left;
+  padding: 20px 0 20px 80px;
+}
+.basement a {
+    color: #333;
+}
+/*************************************************************/
+/* END FOOTER                                                 /
+/*************************************************************/

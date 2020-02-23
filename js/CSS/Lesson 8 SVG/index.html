@@ -1,0 +1,184 @@
+<!DOCTYPE html>
+<html lang="uk">
+<head>
+	<meta charset="UTF-8">
+	<meta name="description" content="SVG">
+	<meta name="keywords" content="About SVG">	
+	<link rel="icon" href="img/favicon.png" type="image">
+	<meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+	<link rel="stylesheet" type="text/css" href="http://maxcdn.bootstrapcdn.com/font-awesome/4.2.0/css/font-awesome.min.css"><!--load all styles Font Awesome-->
+	<link rel="stylesheet" href="css/normalize.css">	
+	<link rel="stylesheet" href="font/fonts.css">
+	<link rel="stylesheet" href="css/style.css">
+	<title>SVG</title>
+	<!--[if lt IE 9]>
+	<script src="//html5shiv.google.com/svn/trunk/html5.js"></script>
+	<![endif]-->
+</head>
+<body>
+	<header role="upside">
+		
+	</header>
+	<main role="conteiner">
+		<h1>
+			SVG
+		</h1>
+		<svg version="1.1"
+			 baseprofile="full"
+			 xmlns="http://www.w3.org/2000/svg"
+			 xmlns:xlink="http://www.w3.org/1999/xlink"
+			 xmlns:xlink="http://www,w3,org/2001/xml-events"
+			 height="400px" width="400px">
+			 <!--КВАДРАТ ============= -->
+			 <rect x="0" y="0" width="400" height="400" fill="none" stroke="black" stroke-width="5px" stroke-opasity="0.5"/>
+			 <!--КОЛО ============= -->
+			 <g fill-opacity="0.7" stroke="black" stroke-width="0.5px">
+			 <circle r="100px" cx="200px" cy="200px" fill="red" transform="translate(0, -50)"/>
+			 <circle r="100px" cx="200px" cy="200px" fill="blue" transform="translate(70, 50)"/>
+			 <circle r="100px" cx="200px" cy="200px" fill="green" transform="translate(-70, 50)"/>
+			 </g>			
+		</svg>
+		<!--ПРЯМОКУТНИК ============= -->
+		<br>
+		<svg width="400" height="110">
+			<rect width="300" height="100" style="fill: rgb(0,0,255); stroke-width:3;stroke: rgb(0,0,0);"/>
+		</svg>
+		<!--КВАДРАТ З ФОНОМ ============= -->
+		<br>
+		<svg width="400" height="180">
+			<rect x="20" y="20" width="150" height="150" style="fill: blue; stroke-width:5; stroke: pink; fill-opacity:0.1; stroke-opacity:0.9"/>
+		</svg>
+		<!--ЗАКРУГЛЕННЯ КУТІВ ============= -->
+		<br>
+		<svg width="400" height="180">
+			<rect x="20" y="20" rx="50" ry="50" width="150" height="150" style="fill: blue; stroke-width:5; stroke: pink; fill-opacity:0.1; stroke-opacity:0.9"/>
+		</svg>
+		<!--КОЛО ============= -->
+		<br>
+		<svg width="100" height="100">
+			<circle r="40" cx="50" cy="50" fill="red" stroke="black" stroke-width="3"/>
+		</svg>
+		<!--ЕЛІПС ============= -->
+		<br>
+		<svg width="500" height="140">			
+			<ellipse rx="100" ry="50" cx="200" cy="80" style="fill:yellow; stroke: purple; stroke-width: 2"/>
+		</svg>
+		<!-- 3 ЕЛІПСA ============= -->
+		<br>
+		<svg width="500" height="150">			
+			<ellipse rx="220" ry="30" cx="240" cy="100" style="fill: purple;"/>
+			<ellipse rx="190" ry="20" cx="220" cy="70" style="fill: lime;"/>
+			<ellipse rx="170" ry="15" cx="210" cy="45" style="fill: yellow;"/>
+		</svg>
+		<!--ЛІНІЯ ============= -->
+		<br>
+		<svg width="500" height="140">			
+			<line x1="0" y1="0" x2="200" y2="200" stroke="rgb(255,0,0)" stroke-width="2"/>
+		</svg>
+		<!--БАГАТОКУТНИК ============= -->
+		<br>
+		<svg width="500" height="210">			
+			<polygon points="200,10 250,190 160,210" fill="lime" stroke="purple" stroke-width="1"/>
+		</svg>
+		<!--БАГАТОКУТНИК ============= -->
+		<br>
+		<svg width="500" height="250">			
+			<polygon points="220,10 300,210 170,250 123,234" fill="lime" stroke="purple" stroke-width="1"/>
+		</svg>
+		<!--БАГАТОКУТНИК ЗІРКА ============= -->
+		<br>
+		<svg width="500" height="210">			
+			<polygon points="100,10 40,198 190,78 10,78 160,198" fill="lime" stroke="purple" stroke-width="5" fill-rule="nonzero"/>
+		</svg>
+		<!--ЛОМАНА ЛІНІЯ ============= -->
+		<br>
+		<svg width="500" height="200">			
+			<polyline points="20,20 40,25 60,40 80,120 120,140 200,180" fill="none" stroke="black" stroke-width="3"/>
+		</svg>
+		<!--ЛОМАНА ЛІНІЯ СХОДИНКИ ============= -->
+		<br>
+		<svg width="500" height="180">			
+			<polyline points="0,40 40,40 40,80 80,80 80,120 120,120 120,160" fill="white" stroke="red" stroke-width="4"/>
+		</svg>
+		<!--ГЕОМЕТРИЧНА ФІГУРА ============= -->
+		<br>
+		<svg width="450" height="400">			
+			<path id="lineAB" d="M 100 350 l 150 -300" stroke-width="3" stroke="red" fill="none"/>
+			<path id="lineBC" d="M 250 50 l 150 300" stroke-width="3" stroke="red" fill="none"/>
+			<path d="M 175 200 l 150 0" stroke-width="3" stroke="green" fill="none"/>
+			<path d="M 100 350 q 150 -300 300 0" stroke-width="5" stroke="blue" fill="none"/>
+			<g stroke="black" stroke-width="3" fill="black">
+				<circle id="pointA" r="3" cx="100" cy="350"/>
+				<circle id="pointB" r="3" cx="250" cy="50"/>
+				<circle id="pointC" r="3" cx="400" cy="350"/>
+			</g>
+			<g font-size="30" font-family="sans-serif" fill="black" stroke="none" text-anchor="middle">
+				<text x="100" y="350" dx="-30">A</text>
+				<text x="250" y="50" dy="-10">B</text>
+				<text x="400" y="350" dx="30">C</text>
+			</g>
+		</svg>
+		<!--ТЕКСТ SVG ============= -->
+		<br>
+		<svg height="50" width="200">
+			<text x="0" y="15" fill="red" transform="rotate(30 20 40)">My SVG</text>
+		</svg>
+		<!--ТЕКСТ SVG з тегом tspan ============= -->
+		<br>
+		<svg height="90" width="200">
+			<text x="10" y="20" style="fill:red;">Several lines:
+				<tspan x="10" y="45"> First line.</tspan>
+				<tspan x="10" y="70"> Second line.</tspan>
+			</text>
+		</svg>
+		<!--текст-посилання SVG ============= -->
+		<br>
+		<svg height="30" width="200" xmlns:xlink="http://www.w3.org/1999/xlink">
+			<a xlink:href="https://www.w3shools.com/graphics/" target="_blank">
+				<text x="0" y="15" fill="purple">SVG the best!</text>
+			</a>
+		</svg>
+		<!--ЛІНІЇ SVG ============= -->
+		<br>
+		<svg height="80" width="300">
+			<g fill="none">
+				<path d="M5 20 l215 0" stroke="red"/>
+				<path d="M5 40 l215 0" stroke="black"/>
+				<path d="M5 60 l215 0" stroke="blue"/>
+			</g>
+		</svg>
+		<!--ТОВЩИНИ ЛІНІЙ SVG ============= -->
+		<br>
+		<svg height="80" width="300">
+			<g fill="none" stroke="black">
+				<path d="M5 20 l215 0" stroke-width="2"/>
+				<path d="M5 40 l215 0" stroke-width="4"/>
+				<path d="M5 60 l215 0" stroke-width="6"/>
+			</g>
+		</svg>
+		<!--ОБРІЗАННЯ КІНЦІВ ЛІНІЙ SVG ============= -->
+		<br>
+		<svg height="80" width="300">
+			<g fill="none" stroke="black" stroke-width="6">
+				<path d="M5 20 l215 0" stroke-linecap="butt"/>
+				<path d="M5 40 l215 0" stroke-linecap="round"/>
+				<path d="M5 60 l215 0" stroke-linecap="square"/>
+			</g>
+		</svg>
+		<!--ПРОМІЖКИ ЛІНІЙ SVG ============= -->
+		<br>
+		<svg height="80" width="300">
+			<g fill="none" stroke="black" stroke-width="4">
+				<path d="M5 20 l215 0" stroke-dasharray="5,5"/>
+				<path d="M5 40 l215 0" stroke-dasharray="10,10"/>
+				<path d="M5 60 l215 0" stroke-dasharray="20,10,5,5,10"/>
+			</g>
+		</svg>
+	</main>
+	<footer role="downside">
+		<div class="basement">	      
+	        <p>Copyright © 2018 Pylka Mykhailo</p>	
+	  </div>
+	</footer>
+</body>
+</html>
